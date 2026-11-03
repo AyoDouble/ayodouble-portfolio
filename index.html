@@ -107,14 +107,15 @@
             </div>
           </div>
           <figure class="hero-art">
-            <div class="portrait-placeholder" aria-hidden="true">
-              <span class="portrait-initials">AF</span>
-              <span class="portrait-prompt mono">YOUR PHOTO<br />GOES HERE</span>
-              <span class="portrait-cross">+</span>
+            <div class="portrait-frame">
+              <img
+                class="portrait-image"
+                src="images/afolabi-portrait.jpg"
+                alt="Afolabi Fatoki smiling in a dark jacket."
+                fetchpriority="high"
+              />
             </div>
-            <figcaption class="portrait-caption mono" id="photo-placeholder-label">
-              YOUR PHOTO GOES HERE · images/afolabi-portrait.jpg
-            </figcaption>
+            <figcaption class="portrait-caption mono">AFOLABI FATOKI · AYO DOUBLE</figcaption>
           </figure>
         </div>
         <span class="hero-number mono" aria-hidden="true">INDEPENDENT MIND<br />ALWAYS LEARNING</span>
@@ -241,7 +242,7 @@
       <section class="projects-section page-width" id="projects" aria-labelledby="projects-title">
         <div class="section-top">
           <p class="eyebrow mono"><span>02</span> / THINGS I’VE HELPED MAKE</p>
-          <p class="section-aside">A few live projects<br />built for real people.</p>
+          <p class="section-aside">Click a project<br />to preview it live.</p>
         </div>
         <div class="section-title-row">
           <h2 id="projects-title">Selected <em>projects.</em></h2>
@@ -253,7 +254,7 @@
             href="https://atof.vercel.app/"
             target="_blank"
             rel="noreferrer"
-            aria-label="Visit the Amb. Tokunbo Oderinde Foundation website"
+            aria-label="Preview the Amb. Tokunbo Oderinde Foundation website"
           >
             <span class="project-art" aria-hidden="true">
               <span class="project-kicker mono">EDUCATION / COMMUNITY</span>
@@ -271,7 +272,7 @@
             href="https://certihand.vercel.app/"
             target="_blank"
             rel="noreferrer"
-            aria-label="Visit the CertiHand campus work platform"
+            aria-label="Preview the CertiHand campus work platform"
           >
             <span class="project-art" aria-hidden="true">
               <span class="project-kicker mono">CAMPUS / OPPORTUNITY</span>
@@ -289,7 +290,7 @@
             href="https://vbs-feedback.vercel.app/"
             target="_blank"
             rel="noreferrer"
-            aria-label="Visit the Ijero Baptist Church Vacation Bible School feedback site"
+            aria-label="Preview the Vacation Bible School feedback site"
           >
             <span class="project-art" aria-hidden="true">
               <span class="project-kicker mono">COMMUNITY / FEEDBACK</span>
@@ -308,7 +309,7 @@
             href="https://tribute-macaulay.vercel.app/"
             target="_blank"
             rel="noreferrer"
-            aria-label="Visit the In Loving Memory memorial website"
+            aria-label="Preview the In Loving Memory memorial website"
           >
             <span class="project-art" aria-hidden="true">
               <span class="project-kicker mono">MEMORY / TRIBUTE</span>
@@ -472,6 +473,45 @@
         </div>
       </section>
     </main>
+
+    <dialog
+      class="project-preview"
+      aria-labelledby="project-preview-title"
+      aria-describedby="project-preview-note"
+    >
+      <div class="project-preview-header">
+        <div>
+          <p class="project-preview-label mono">SELECTED PROJECT · LIVE PREVIEW</p>
+          <h2 id="project-preview-title">Project preview</h2>
+        </div>
+        <button class="project-preview-close" type="button" aria-label="Close project preview">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="project-preview-toolbar">
+        <p id="project-preview-note">
+          If the preview is blank, this site may block embedded previews. Open it in a new tab.
+        </p>
+        <a
+          class="project-preview-link mono"
+          href="https://atof.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          OPEN LIVE SITE <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <div class="project-preview-frame">
+        <iframe
+          title="Live project preview"
+          src="about:blank"
+          sandbox="allow-forms allow-scripts allow-popups"
+          allow="fullscreen"
+          referrerpolicy="strict-origin-when-cross-origin"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </dialog>
 
     <footer class="site-footer page-width">
       <a class="footer-brand" href="#home" aria-label="AyoDouble, back to top">
