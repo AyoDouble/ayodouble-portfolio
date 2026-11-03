@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f4f2eb" />
+    <meta name="theme-color" content="#0b0d14" />
     <meta
       name="description"
       content="Afolabi Fatoki is a frontend developer and tech specialist based in Lagos, Nigeria, building thoughtful digital experiences."
@@ -26,8 +26,8 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#home" aria-label="Afolabi Fatoki, home">
-        <span class="brand-mark">AF</span><span class="brand-dot">.</span>
+      <a class="brand" href="#home" aria-label="AyoDouble, home">
+        <img src="assets/ayodouble-logo.png" alt="AyoDouble" />
       </a>
       <button
         class="menu-toggle"
@@ -38,45 +38,84 @@
         <span>Menu</span><span class="menu-icon" aria-hidden="true"></span>
       </button>
       <nav class="navigation" id="primary-navigation" aria-label="Main navigation">
-        <a href="#work">Experience <span>01</span></a>
-        <a href="#projects">Projects <span>02</span></a>
-        <a href="#about">About <span>03</span></a>
-        <a href="#learning">Learning <span>04</span></a>
-        <a href="#contact">Contact <span>05</span></a>
+        <a href="#home">Warm-up</a>
+        <a href="#work">Career</a>
+        <a href="#projects">Portfolio</a>
+        <a href="#skills">Skills</a>
+        <a href="#learning">Education</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <a class="header-location" href="#contact">
-        <span class="status-dot" aria-hidden="true"></span>
-        LAGOS, NIGERIA
-      </a>
+      <div class="header-actions">
+        <a class="header-email" href="mailto:posifatoki@gmail.com" aria-label="Email Afolabi">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M3.5 5.5h17v13h-17zM4 6l8 6.5L20 6" />
+          </svg>
+        </a>
+        <a
+          class="header-location header-whatsapp"
+          href="https://wa.me/2349162263797?text=Hi%20Afolabi%2C%20I%20saw%20your%20portfolio."
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Message Afolabi on WhatsApp"
+        >
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M20 11.6a8 8 0 0 1-11.8 7L4 20l1.4-4A8 8 0 1 1 20 11.6Z" />
+            <path d="M9 8.5c.3 2.7 2 4.6 4.8 5.3l1-1.2 2 .9c-.2 1.2-1.2 2-2.5 2-3.8-.2-7.2-3.5-7.3-7.2 0-1.2.7-2.1 1.8-2.4l1 2.1Z" />
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
     </header>
 
     <main>
       <section class="hero page-width" id="home" aria-labelledby="hero-title">
         <div class="hero-kicker mono">
-          <span>FRONTEND DEVELOPER &amp; TECH SPECIALIST</span>
+          <span>CODE · IT SUPPORT · CREATIVE MEDIA</span>
           <span>06° 31' N / 03° 23' E</span>
         </div>
         <div class="hero-main">
-          <h1 id="hero-title">
-            Making digital<br />
-            <span class="hero-second"><span class="spark" aria-hidden="true">✳</span>feel <em>human.</em></span>
-          </h1>
-          <div class="hero-art" aria-hidden="true">
-            <span class="art-ring ring-a"></span>
-            <span class="art-ring ring-b"></span>
-            <span class="art-orb"></span>
-            <span class="art-cross">+</span>
-            <span class="art-label mono">CODE / CREATIVITY / CURIOSITY</span>
+          <div class="hero-copy">
+            <h1 id="hero-title">
+              <span class="hero-hey">HEY YO</span>
+              <span class="hero-they">THEY CALL ME</span>
+              <span class="hero-name">AYODOUBLE</span>
+            </h1>
+            <p class="hero-role mono">FRONTEND DEVELOPER <span>&amp;</span> TECH SPECIALIST</p>
+            <p class="hero-description">
+              I’m Afolabi — a Computer Science student and tech specialist connecting thoughtful
+              code, IT support, and creative media to solve real-world problems.
+            </p>
+            <div class="hero-actions">
+              <a class="hero-action hero-action-email" href="mailto:posifatoki@gmail.com">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M3.5 5.5h17v13h-17zM4 6l8 6.5L20 6" />
+                </svg>
+                <span>EMAIL ME</span><span aria-hidden="true">↗</span>
+              </a>
+              <a
+                class="hero-action hero-action-whatsapp"
+                href="https://wa.me/2349162263797?text=Hi%20Afolabi%2C%20I%20saw%20your%20portfolio."
+                target="_blank"
+                rel="noreferrer"
+              >
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M20 11.6a8 8 0 0 1-11.8 7L4 20l1.4-4A8 8 0 1 1 20 11.6Z" />
+                  <path d="M9 8.5c.3 2.7 2 4.6 4.8 5.3l1-1.2 2 .9c-.2 1.2-1.2 2-2.5 2-3.8-.2-7.2-3.5-7.3-7.2 0-1.2.7-2.1 1.8-2.4l1 2.1Z" />
+                </svg>
+                <span>WHATSAPP</span><span aria-hidden="true">↗</span>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="hero-bottom">
-          <p>
-            I’m Afolabi — a frontend developer and tech specialist connecting
-            <span>thoughtful code with real-world problem solving.</span>
-          </p>
-          <a class="scroll-link" href="#work" aria-label="Scroll to experience">
-            <span>SCROLL TO EXPLORE</span><span class="scroll-arrow" aria-hidden="true">↓</span>
-          </a>
+          <figure class="hero-art">
+            <div class="portrait-placeholder" aria-hidden="true">
+              <span class="portrait-initials">AF</span>
+              <span class="portrait-prompt mono">YOUR PHOTO<br />GOES HERE</span>
+              <span class="portrait-cross">+</span>
+            </div>
+            <figcaption class="portrait-caption mono" id="photo-placeholder-label">
+              YOUR PHOTO GOES HERE · images/afolabi-portrait.jpg
+            </figcaption>
+          </figure>
         </div>
         <span class="hero-number mono" aria-hidden="true">INDEPENDENT MIND<br />ALWAYS LEARNING</span>
       </section>
@@ -308,7 +347,7 @@
             </div>
           </div>
 
-          <div class="skills-panel">
+          <div class="skills-panel" id="skills">
             <div class="skills-heading">
               <span class="mono">A FEW TOOLS IN MY KIT</span>
               <span class="skills-count mono">01—04</span>
@@ -408,7 +447,22 @@
             <div class="contact-copy">
               <p>Have an idea, a question, or a knotty tech problem? I’d love to hear about it.</p>
               <a class="email-link" href="mailto:posifatoki@gmail.com">
-                <span>GET IN TOUCH</span><span aria-hidden="true">↗</span>
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M3.5 5.5h17v13h-17zM4 6l8 6.5L20 6" />
+                </svg>
+                <span>EMAIL ME</span><span aria-hidden="true">↗</span>
+              </a>
+              <a
+                class="contact-whatsapp"
+                href="https://wa.me/2349162263797?text=Hi%20Afolabi%2C%20I%20saw%20your%20portfolio."
+                target="_blank"
+                rel="noreferrer"
+              >
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M20 11.6a8 8 0 0 1-11.8 7L4 20l1.4-4A8 8 0 1 1 20 11.6Z" />
+                  <path d="M9 8.5c.3 2.7 2 4.6 4.8 5.3l1-1.2 2 .9c-.2 1.2-1.2 2-2.5 2-3.8-.2-7.2-3.5-7.3-7.2 0-1.2.7-2.1 1.8-2.4l1 2.1Z" />
+                </svg>
+                WHATSAPP
               </a>
               <a class="phone-link" href="tel:+2349162263797">+234 916 226 3797</a>
               <a class="phone-link" href="tel:+2349122970580">+234 912 297 0580</a>
@@ -420,7 +474,9 @@
     </main>
 
     <footer class="site-footer page-width">
-      <a class="footer-brand" href="#home">AF<span>.</span></a>
+      <a class="footer-brand" href="#home" aria-label="AyoDouble, back to top">
+        <img src="assets/ayodouble-logo.png" alt="" />
+      </a>
       <p class="mono">MADE WITH CURIOSITY <span>© <span id="current-year">2026</span></span></p>
       <a class="footer-top mono" href="#home">BACK TO THE TOP ↑</a>
     </footer>
