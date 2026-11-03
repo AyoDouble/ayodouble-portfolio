@@ -666,6 +666,269 @@ a {
   text-align: right;
 }
 
+.projects-section {
+  padding-block: 0 clamp(100px, 13vw, 165px);
+}
+
+.projects-section .section-title-row {
+  margin-bottom: 48px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(35px, 6vw, 78px) clamp(22px, 4vw, 55px);
+}
+
+.project-card {
+  display: grid;
+  align-content: start;
+  min-width: 0;
+}
+
+.project-art {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 1.26;
+  isolation: isolate;
+  transition: transform 240ms ease;
+}
+
+.project-card:hover .project-art {
+  transform: translateY(-4px);
+}
+
+.project-kicker {
+  position: absolute;
+  top: 17px;
+  left: 18px;
+  z-index: 2;
+  font-size: 0.5rem;
+}
+
+.project-open {
+  position: absolute;
+  right: 15px;
+  bottom: 14px;
+  z-index: 3;
+  display: grid;
+  width: 35px;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-size: 1.05rem;
+  transition: color 180ms ease, background 180ms ease, transform 180ms ease;
+}
+
+.project-card:hover .project-open {
+  transform: rotate(45deg);
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.project-atof .project-art {
+  background: #dce5c8;
+}
+
+.atof-mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  color: var(--ink);
+  font-size: clamp(7rem, 19vw, 17rem);
+  font-weight: 600;
+  letter-spacing: -0.15em;
+  line-height: 0.8;
+  transform: translate(-58%, -50%);
+}
+
+.atof-mark span {
+  position: relative;
+  top: -0.65em;
+  color: var(--orange);
+  font-size: 0.34em;
+}
+
+.project-art-label {
+  position: absolute;
+  right: 14%;
+  bottom: 18%;
+  font-size: clamp(1.05rem, 2.4vw, 2.3rem);
+  font-weight: 500;
+  letter-spacing: -0.07em;
+  line-height: 0.94;
+  text-align: right;
+}
+
+.project-certihand .project-art {
+  background: #e6e2d6;
+}
+
+.certi-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  width: 55%;
+  aspect-ratio: 1.28;
+  align-content: center;
+  gap: 8%;
+  padding: 8%;
+  border: 1px solid var(--ink);
+  background: var(--lime);
+  box-shadow: 16px 16px 0 rgba(29, 32, 27, 0.09);
+  transform: translate(-50%, -50%) rotate(-7deg);
+  transition: transform 240ms ease;
+}
+
+.project-card:hover .certi-card {
+  transform: translate(-50%, -50%) rotate(-2deg);
+}
+
+.certi-card span {
+  position: absolute;
+  top: -14%;
+  right: -9%;
+  display: grid;
+  width: 27%;
+  aspect-ratio: 1;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--orange);
+  font-size: clamp(0.65rem, 1.3vw, 1.2rem);
+  font-weight: 600;
+}
+
+.certi-card i {
+  display: block;
+  width: 72%;
+  height: 3px;
+  background: var(--ink);
+}
+
+.certi-card i:last-child {
+  width: 45%;
+}
+
+.certi-caption {
+  position: absolute;
+  right: 13%;
+  bottom: 14%;
+  font-size: clamp(1rem, 2.7vw, 2.5rem);
+  font-weight: 500;
+  letter-spacing: -0.08em;
+  line-height: 0.84;
+  text-align: right;
+}
+
+.project-vbs .project-art {
+  background: var(--orange);
+}
+
+.vbs-stars {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  color: var(--lime);
+  font-size: clamp(1.4rem, 3.5vw, 3rem);
+  letter-spacing: 0.1em;
+  transform: translateX(-50%) rotate(-7deg);
+}
+
+.vbs-title {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  font-size: clamp(3rem, 8vw, 7rem);
+  font-weight: 600;
+  letter-spacing: -0.11em;
+  line-height: 0.68;
+  text-align: center;
+  transform: translateX(-50%) rotate(-7deg);
+}
+
+.vbs-title em {
+  color: var(--paper);
+  font-weight: 400;
+}
+
+.vbs-note {
+  position: absolute;
+  right: 15%;
+  bottom: 17%;
+  font-family: var(--mono);
+  font-size: 0.52rem;
+}
+
+.project-tribute .project-art {
+  background: #e9e7dd;
+}
+
+.tribute-flower {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  color: var(--orange);
+  font-size: clamp(3.2rem, 8vw, 7rem);
+  transform: translateX(-50%);
+}
+
+.tribute-title {
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  font-size: clamp(1.8rem, 4.7vw, 4.4rem);
+  font-weight: 500;
+  letter-spacing: -0.08em;
+  line-height: 0.85;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.tribute-title em {
+  color: #947443;
+  font-weight: 400;
+}
+
+.tribute-rule {
+  position: absolute;
+  bottom: 19%;
+  left: 50%;
+  width: 22%;
+  height: 1px;
+  background: var(--ink);
+  transform: translateX(-50%);
+}
+
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 15px;
+  color: var(--muted);
+  font-size: 0.5rem;
+}
+
+.project-title {
+  display: block;
+  margin-top: 9px;
+  font-size: clamp(1rem, 1.6vw, 1.35rem);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+}
+
+.project-description {
+  display: block;
+  max-width: 510px;
+  margin-top: 6px;
+  color: #60635a;
+  font-size: 0.76rem;
+  line-height: 1.6;
+}
+
 .about-section {
   background: var(--ink);
   color: var(--paper);
@@ -1204,6 +1467,59 @@ a {
   .experience-grid {
     grid-template-columns: 1fr;
     row-gap: 34px;
+  }
+
+  .projects-section {
+    padding-bottom: 95px;
+  }
+
+  .projects-section .section-title-row {
+    margin-bottom: 36px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .project-art {
+    aspect-ratio: 1.12;
+  }
+
+  .atof-mark {
+    font-size: 47vw;
+  }
+
+  .project-art-label {
+    font-size: clamp(1.5rem, 7vw, 2.4rem);
+  }
+
+  .certi-card span {
+    font-size: 0.92rem;
+  }
+
+  .certi-caption {
+    font-size: clamp(1.5rem, 7vw, 2.5rem);
+  }
+
+  .vbs-stars {
+    font-size: 2rem;
+  }
+
+  .vbs-title {
+    font-size: clamp(4rem, 18vw, 7rem);
+  }
+
+  .tribute-flower {
+    font-size: 5rem;
+  }
+
+  .tribute-title {
+    font-size: clamp(2.4rem, 12vw, 4rem);
+  }
+
+  .project-title {
+    font-size: 1.18rem;
   }
 
   .experience-featured {
