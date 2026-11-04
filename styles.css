@@ -501,13 +501,9 @@ a {
 
 .experience-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: clamp(22px, 4vw, 56px);
   row-gap: clamp(24px, 3vw, 42px);
-}
-
-.experience-featured {
-  grid-row: span 2;
 }
 
 .experience-visual {
@@ -519,21 +515,26 @@ a {
   color: #141519;
 }
 
-.experience-featured .experience-visual {
-  aspect-ratio: 16 / 9;
-}
-
 .experience-visual-link {
   display: block;
 }
 
 .experience-visual-link img,
-.visual-ecobank img {
+.visual-ecobank img,
+.visual-vatebra img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.visual-vatebra {
+  background: #111;
+}
+
+.visual-vatebra img {
+  object-fit: cover;
 }
 
 .experience-visual-link img {
@@ -1647,14 +1648,6 @@ a {
 
   .project-title {
     font-size: 1.18rem;
-  }
-
-  .experience-featured {
-    grid-row: auto;
-  }
-
-  .experience-featured .experience-visual {
-    aspect-ratio: 16 / 9;
   }
 
   .experience-visual {
