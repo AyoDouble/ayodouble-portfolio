@@ -1703,6 +1703,18 @@ a {
     transform 180ms ease;
 }
 
+.social-links-list a svg {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  fill: currentColor;
+}
+
+.social-links-list a svg .social-icon-dot {
+  fill: currentColor;
+  stroke: none;
+}
+
 .social-links-list a:hover {
   transform: translateY(-2px);
   background: #101321;
