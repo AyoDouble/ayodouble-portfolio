@@ -1672,6 +1672,48 @@ a {
   font-size: 0.76rem;
 }
 
+.social-links {
+  margin-top: 25px;
+}
+
+.social-links-label {
+  margin: 0 0 10px;
+  font-size: 0.48rem;
+  letter-spacing: 0.1em;
+}
+
+.social-links-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.social-links-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border: 1px solid rgba(16, 19, 33, 0.55);
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: 0.52rem;
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.social-links-list a:hover {
+  transform: translateY(-2px);
+  background: #101321;
+  color: #f0efea;
+}
+
+.social-links-list a span {
+  color: var(--orange);
+  font-size: 0.75rem;
+}
+
 .contact-whatsapp {
   display: inline-flex;
   min-height: 43px;
